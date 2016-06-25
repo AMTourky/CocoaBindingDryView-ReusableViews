@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB9054211D1E7B9100104654 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9054201D1E7B9100104654 /* AppDelegate.swift */; };
+		EB9054231D1E7B9100104654 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9054221D1E7B9100104654 /* ViewController.swift */; };
+		EB9054261D1E7B9100104654 /* CocoaBindingDryView_ReusableViews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB9054241D1E7B9100104654 /* CocoaBindingDryView_ReusableViews.xcdatamodeld */; };
+		EB9054281D1E7B9100104654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9054271D1E7B9100104654 /* Assets.xcassets */; };
+		EB90542B1D1E7B9100104654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9054291D1E7B9100104654 /* Main.storyboard */; };
+		EB9054361D1E7B9100104654 /* CocoaBindingDryView_ReusableViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9054351D1E7B9100104654 /* CocoaBindingDryView_ReusableViewsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB9054321D1E7B9100104654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB9054151D1E7B9100104654 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB90541C1D1E7B9100104654;
+			remoteInfo = "CocoaBindingDryView-ReusableViews";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB90541D1D1E7B9100104654 /* CocoaBindingDryView-ReusableViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CocoaBindingDryView-ReusableViews.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9054201D1E7B9100104654 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB9054221D1E7B9100104654 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB9054251D1E7B9100104654 /* CocoaBindingDryView_ReusableViews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CocoaBindingDryView_ReusableViews.xcdatamodel; sourceTree = "<group>"; };
+		EB9054271D1E7B9100104654 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB90542A1D1E7B9100104654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB90542C1D1E7B9100104654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9054311D1E7B9100104654 /* CocoaBindingDryView-ReusableViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CocoaBindingDryView-ReusableViewsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9054351D1E7B9100104654 /* CocoaBindingDryView_ReusableViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaBindingDryView_ReusableViewsUITests.swift; sourceTree = "<group>"; };
+		EB9054371D1E7B9100104654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB90541A1D1E7B9100104654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB90542E1D1E7B9100104654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB9054141D1E7B9100104654 = {
+			isa = PBXGroup;
+			children = (
+				EB90541F1D1E7B9100104654 /* CocoaBindingDryView-ReusableViews */,
+				EB9054341D1E7B9100104654 /* CocoaBindingDryView-ReusableViewsUITests */,
+				EB90541E1D1E7B9100104654 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB90541E1D1E7B9100104654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB90541D1D1E7B9100104654 /* CocoaBindingDryView-ReusableViews.app */,
+				EB9054311D1E7B9100104654 /* CocoaBindingDryView-ReusableViewsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB90541F1D1E7B9100104654 /* CocoaBindingDryView-ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				EB9054201D1E7B9100104654 /* AppDelegate.swift */,
+				EB9054221D1E7B9100104654 /* ViewController.swift */,
+				EB9054271D1E7B9100104654 /* Assets.xcassets */,
+				EB9054291D1E7B9100104654 /* Main.storyboard */,
+				EB90542C1D1E7B9100104654 /* Info.plist */,
+				EB9054241D1E7B9100104654 /* CocoaBindingDryView_ReusableViews.xcdatamodeld */,
+			);
+			path = "CocoaBindingDryView-ReusableViews";
+			sourceTree = "<group>";
+		};
+		EB9054341D1E7B9100104654 /* CocoaBindingDryView-ReusableViewsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB9054351D1E7B9100104654 /* CocoaBindingDryView_ReusableViewsUITests.swift */,
+				EB9054371D1E7B9100104654 /* Info.plist */,
+			);
+			path = "CocoaBindingDryView-ReusableViewsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB90541C1D1E7B9100104654 /* CocoaBindingDryView-ReusableViews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB90543A1D1E7B9100104654 /* Build configuration list for PBXNativeTarget "CocoaBindingDryView-ReusableViews" */;
+			buildPhases = (
+				EB9054191D1E7B9100104654 /* Sources */,
+				EB90541A1D1E7B9100104654 /* Frameworks */,
+				EB90541B1D1E7B9100104654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CocoaBindingDryView-ReusableViews";
+			productName = "CocoaBindingDryView-ReusableViews";
+			productReference = EB90541D1D1E7B9100104654 /* CocoaBindingDryView-ReusableViews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB9054301D1E7B9100104654 /* CocoaBindingDryView-ReusableViewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB90543D1D1E7B9100104654 /* Build configuration list for PBXNativeTarget "CocoaBindingDryView-ReusableViewsUITests" */;
+			buildPhases = (
+				EB90542D1D1E7B9100104654 /* Sources */,
+				EB90542E1D1E7B9100104654 /* Frameworks */,
+				EB90542F1D1E7B9100104654 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB9054331D1E7B9100104654 /* PBXTargetDependency */,
+			);
+			name = "CocoaBindingDryView-ReusableViewsUITests";
+			productName = "CocoaBindingDryView-ReusableViewsUITests";
+			productReference = EB9054311D1E7B9100104654 /* CocoaBindingDryView-ReusableViewsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB9054151D1E7B9100104654 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = AMTourky;
+				TargetAttributes = {
+					EB90541C1D1E7B9100104654 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					EB9054301D1E7B9100104654 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EB90541C1D1E7B9100104654;
+					};
+				};
+			};
+			buildConfigurationList = EB9054181D1E7B9100104654 /* Build configuration list for PBXProject "CocoaBindingDryView-ReusableViews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB9054141D1E7B9100104654;
+			productRefGroup = EB90541E1D1E7B9100104654 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB90541C1D1E7B9100104654 /* CocoaBindingDryView-ReusableViews */,
+				EB9054301D1E7B9100104654 /* CocoaBindingDryView-ReusableViewsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB90541B1D1E7B9100104654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9054281D1E7B9100104654 /* Assets.xcassets in Resources */,
+				EB90542B1D1E7B9100104654 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB90542F1D1E7B9100104654 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB9054191D1E7B9100104654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9054231D1E7B9100104654 /* ViewController.swift in Sources */,
+				EB9054261D1E7B9100104654 /* CocoaBindingDryView_ReusableViews.xcdatamodeld in Sources */,
+				EB9054211D1E7B9100104654 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB90542D1D1E7B9100104654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9054361D1E7B9100104654 /* CocoaBindingDryView_ReusableViewsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB9054331D1E7B9100104654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB90541C1D1E7B9100104654 /* CocoaBindingDryView-ReusableViews */;
+			targetProxy = EB9054321D1E7B9100104654 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB9054291D1E7B9100104654 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB90542A1D1E7B9100104654 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB9054381D1E7B9100104654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB9054391D1E7B9100104654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EB90543B1D1E7B9100104654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "CocoaBindingDryView-ReusableViews/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.amtourky.CocoaBindingDryView-ReusableViews";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EB90543C1D1E7B9100104654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "CocoaBindingDryView-ReusableViews/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.amtourky.CocoaBindingDryView-ReusableViews";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EB90543E1D1E7B9100104654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "CocoaBindingDryView-ReusableViewsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.amtourky.CocoaBindingDryView-ReusableViewsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "CocoaBindingDryView-ReusableViews";
+			};
+			name = Debug;
+		};
+		EB90543F1D1E7B9100104654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "CocoaBindingDryView-ReusableViewsUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.amtourky.CocoaBindingDryView-ReusableViewsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "CocoaBindingDryView-ReusableViews";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB9054181D1E7B9100104654 /* Build configuration list for PBXProject "CocoaBindingDryView-ReusableViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9054381D1E7B9100104654 /* Debug */,
+				EB9054391D1E7B9100104654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB90543A1D1E7B9100104654 /* Build configuration list for PBXNativeTarget "CocoaBindingDryView-ReusableViews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB90543B1D1E7B9100104654 /* Debug */,
+				EB90543C1D1E7B9100104654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EB90543D1D1E7B9100104654 /* Build configuration list for PBXNativeTarget "CocoaBindingDryView-ReusableViewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB90543E1D1E7B9100104654 /* Debug */,
+				EB90543F1D1E7B9100104654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB9054241D1E7B9100104654 /* CocoaBindingDryView_ReusableViews.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB9054251D1E7B9100104654 /* CocoaBindingDryView_ReusableViews.xcdatamodel */,
+			);
+			currentVersion = EB9054251D1E7B9100104654 /* CocoaBindingDryView_ReusableViews.xcdatamodel */;
+			path = CocoaBindingDryView_ReusableViews.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB9054151D1E7B9100104654 /* Project object */;
+}
