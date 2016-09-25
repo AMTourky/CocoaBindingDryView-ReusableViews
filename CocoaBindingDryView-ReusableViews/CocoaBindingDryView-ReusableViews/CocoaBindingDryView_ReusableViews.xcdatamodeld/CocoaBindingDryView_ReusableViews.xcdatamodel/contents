@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Automatic">
-    <entity name="Entity" representedClassName=".Entity" syncable="YES">
-        <attribute name="dateProperty" optional="YES" attributeType="Date" syncable="YES"/>
-        <relationship name="subEntities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SubEntity" inverseName="parentEntity" inverseEntity="SubEntity" syncable="YES"/>
-    </entity>
-    <entity name="SubEntity" representedClassName=".SubEntity" syncable="YES">
-        <attribute name="boolProperty" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <relationship name="parentEntity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Entity" inverseName="subEntities" inverseEntity="Entity" syncable="YES"/>
-    </entity>
-    <entity name="SuperEntity" representedClassName=".SuperEntity" syncable="YES">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G31" minimumToolsVersion="Automatic">
+    <entity name="BaseItem" representedClassName=".BaseItem" syncable="YES">
         <attribute name="intProperty" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="stringProperty" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Item" representedClassName=".Item" parentEntity="BaseItem" syncable="YES">
+        <attribute name="dateProperty" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="subItems" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SubItem" inverseName="parentItem" inverseEntity="SubItem" syncable="YES"/>
+    </entity>
+    <entity name="SubItem" representedClassName=".SubItem" parentEntity="BaseItem" syncable="YES">
+        <attribute name="boolProperty" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <relationship name="parentItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" inverseName="subItems" inverseEntity="Item" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Entity" positionX="-63" positionY="-18" width="128" height="75"/>
-        <element name="SubEntity" positionX="-54" positionY="-9" width="128" height="75"/>
-        <element name="SuperEntity" positionX="-45" positionY="45" width="128" height="75"/>
+        <element name="Item" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="SubItem" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="BaseItem" positionX="-45" positionY="45" width="128" height="75"/>
     </elements>
 </model>

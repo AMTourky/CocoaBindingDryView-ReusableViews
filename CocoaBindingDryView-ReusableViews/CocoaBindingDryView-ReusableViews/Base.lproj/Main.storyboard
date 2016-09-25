@@ -679,7 +679,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="EntityViewer"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outlet property="containerView" destination="m2S-Jp-Qdl" id="XDP-Vf-W2I"/>
+                                    <outlet property="inspectedObjectControllerReference" destination="9Ke-aj-SSv" id="1Ss-MB-FBK"/>
                                 </connections>
                             </customView>
                         </subviews>
@@ -692,6 +692,12 @@
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <objectController mode="entity" entityName="Item" id="9Ke-aj-SSv" userLabel="Item Object Controller">
+                    <connections>
+                        <binding destination="XfG-lQ-9wD" name="contentObject" keyPath="self.item" id="ev1-Be-XnS"/>
+                    </connections>
+                </objectController>
+                <userDefaultsController id="g2Y-TO-VeE"/>
             </objects>
             <point key="canvasLocation" x="133" y="682"/>
         </scene>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="DRYView" customModule="CocoaBindingDryView_ReusableViews" customModuleProvider="target"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="259" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button translatesAutoresizingMaskIntoConstraints="NO" id="7AX-fm-bsw">
+                    <rect key="frame" x="68" y="139" width="123" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="6Go-1b-C6J"/>
+                    </constraints>
+                    <buttonCell key="cell" type="check" title="boolProperty" bezelStyle="regularSquare" imagePosition="left" alignment="right" state="on" inset="2" id="D0i-ZJ-feL">
+                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <binding destination="tXI-Gs-rni" name="value" keyPath="selection.boolProperty" id="kdX-um-g3Q"/>
+                    </connections>
+                </button>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="S2r-ww-Oub" customClass="DRYView" customModule="CocoaBindingDryView_ReusableViews" customModuleProvider="target">
+                    <rect key="frame" x="10" y="10" width="239" height="116"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="BaseItemViewer"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="inspectedObjectControllerReference" destination="tXI-Gs-rni" id="RiB-3F-Q34"/>
+                    </connections>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7AX-fm-bsw" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="70" id="1ul-aZ-f0o"/>
+                <constraint firstItem="S2r-ww-Oub" firstAttribute="top" secondItem="7AX-fm-bsw" secondAttribute="bottom" constant="15" id="GiX-W1-w5v"/>
+                <constraint firstAttribute="trailing" secondItem="S2r-ww-Oub" secondAttribute="trailing" constant="10" id="Vft-9z-yrl"/>
+                <constraint firstItem="S2r-ww-Oub" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="10" id="aBO-D5-UMp"/>
+                <constraint firstAttribute="bottom" secondItem="S2r-ww-Oub" secondAttribute="bottom" constant="10" id="ggy-ZA-WJO"/>
+                <constraint firstAttribute="trailing" secondItem="7AX-fm-bsw" secondAttribute="trailing" constant="70" id="q4G-Mt-Yut"/>
+                <constraint firstItem="7AX-fm-bsw" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="20" id="st6-d3-7Ms"/>
+            </constraints>
+            <point key="canvasLocation" x="198.5" y="266.5"/>
+        </customView>
+        <objectController mode="entity" entityName="SubItem" id="tXI-Gs-rni" userLabel="SubItem Object Controller">
+            <connections>
+                <binding destination="-2" name="contentObject" keyPath="self.inspectedObject" id="uU6-4x-bBT"/>
+            </connections>
+        </objectController>
+        <userDefaultsController id="X7b-je-Byt"/>
+    </objects>
+</document>
