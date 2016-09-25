@@ -13,6 +13,16 @@
 		EB9054281D1E7B9100104654 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9054271D1E7B9100104654 /* Assets.xcassets */; };
 		EB90542B1D1E7B9100104654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9054291D1E7B9100104654 /* Main.storyboard */; };
 		EB9054361D1E7B9100104654 /* CocoaBindingDryView_ReusableViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9054351D1E7B9100104654 /* CocoaBindingDryView_ReusableViewsUITests.swift */; };
+		EB9054431D1E7C6100104654 /* DryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9054421D1E7C6100104654 /* DryView.swift */; };
+		EB9054531D1E7E2E00104654 /* SuperEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB90544D1D1E7E2E00104654 /* SuperEntity+CoreDataProperties.swift */; };
+		EB9054541D1E7E2E00104654 /* SuperEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB90544E1D1E7E2E00104654 /* SuperEntity.swift */; };
+		EB9054551D1E7E2E00104654 /* Entity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB90544F1D1E7E2E00104654 /* Entity+CoreDataProperties.swift */; };
+		EB9054561D1E7E2E00104654 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9054501D1E7E2E00104654 /* Entity.swift */; };
+		EB9054571D1E7E2E00104654 /* SubEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9054511D1E7E2E00104654 /* SubEntity+CoreDataProperties.swift */; };
+		EB9054581D1E7E2E00104654 /* SubEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9054521D1E7E2E00104654 /* SubEntity.swift */; };
+		EB90545A1D1E7E6C00104654 /* EntityViewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB9054591D1E7E6C00104654 /* EntityViewer.xib */; };
+		EB90545D1D1E7E9500104654 /* SuperEntityViewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB90545C1D1E7E9500104654 /* SuperEntityViewer.xib */; };
+		EB90545F1D1E7EA600104654 /* SubEntityViewer.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB90545E1D1E7EA600104654 /* SubEntityViewer.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,16 @@
 		EB9054311D1E7B9100104654 /* CocoaBindingDryView-ReusableViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CocoaBindingDryView-ReusableViewsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9054351D1E7B9100104654 /* CocoaBindingDryView_ReusableViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaBindingDryView_ReusableViewsUITests.swift; sourceTree = "<group>"; };
 		EB9054371D1E7B9100104654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9054421D1E7C6100104654 /* DryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DryView.swift; sourceTree = "<group>"; };
+		EB90544D1D1E7E2E00104654 /* SuperEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SuperEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EB90544E1D1E7E2E00104654 /* SuperEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperEntity.swift; sourceTree = "<group>"; };
+		EB90544F1D1E7E2E00104654 /* Entity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EB9054501D1E7E2E00104654 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		EB9054511D1E7E2E00104654 /* SubEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SubEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EB9054521D1E7E2E00104654 /* SubEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubEntity.swift; sourceTree = "<group>"; };
+		EB9054591D1E7E6C00104654 /* EntityViewer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EntityViewer.xib; path = XIBs/EntityViewer.xib; sourceTree = "<group>"; };
+		EB90545C1D1E7E9500104654 /* SuperEntityViewer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SuperEntityViewer.xib; path = XIBs/SuperEntityViewer.xib; sourceTree = "<group>"; };
+		EB90545E1D1E7EA600104654 /* SubEntityViewer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SubEntityViewer.xib; path = XIBs/SubEntityViewer.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +99,13 @@
 			children = (
 				EB9054201D1E7B9100104654 /* AppDelegate.swift */,
 				EB9054221D1E7B9100104654 /* ViewController.swift */,
+				EB9054421D1E7C6100104654 /* DryView.swift */,
 				EB9054271D1E7B9100104654 /* Assets.xcassets */,
 				EB9054291D1E7B9100104654 /* Main.storyboard */,
 				EB90542C1D1E7B9100104654 /* Info.plist */,
+				EB90544C1D1E7D9500104654 /* Core Date Model */,
 				EB9054241D1E7B9100104654 /* CocoaBindingDryView_ReusableViews.xcdatamodeld */,
+				EB90545B1D1E7E7300104654 /* XIBs */,
 			);
 			path = "CocoaBindingDryView-ReusableViews";
 			sourceTree = "<group>";
@@ -94,6 +117,30 @@
 				EB9054371D1E7B9100104654 /* Info.plist */,
 			);
 			path = "CocoaBindingDryView-ReusableViewsUITests";
+			sourceTree = "<group>";
+		};
+		EB90544C1D1E7D9500104654 /* Core Date Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB90544D1D1E7E2E00104654 /* SuperEntity+CoreDataProperties.swift */,
+				EB90544E1D1E7E2E00104654 /* SuperEntity.swift */,
+				EB90544F1D1E7E2E00104654 /* Entity+CoreDataProperties.swift */,
+				EB9054501D1E7E2E00104654 /* Entity.swift */,
+				EB9054511D1E7E2E00104654 /* SubEntity+CoreDataProperties.swift */,
+				EB9054521D1E7E2E00104654 /* SubEntity.swift */,
+			);
+			name = "Core Date Model";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EB90545B1D1E7E7300104654 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				EB9054591D1E7E6C00104654 /* EntityViewer.xib */,
+				EB90545C1D1E7E9500104654 /* SuperEntityViewer.xib */,
+				EB90545E1D1E7EA600104654 /* SubEntityViewer.xib */,
+			);
+			name = XIBs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +224,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB90545F1D1E7EA600104654 /* SubEntityViewer.xib in Resources */,
+				EB90545D1D1E7E9500104654 /* SuperEntityViewer.xib in Resources */,
+				EB90545A1D1E7E6C00104654 /* EntityViewer.xib in Resources */,
 				EB9054281D1E7B9100104654 /* Assets.xcassets in Resources */,
 				EB90542B1D1E7B9100104654 /* Main.storyboard in Resources */,
 			);
@@ -198,7 +248,14 @@
 			files = (
 				EB9054231D1E7B9100104654 /* ViewController.swift in Sources */,
 				EB9054261D1E7B9100104654 /* CocoaBindingDryView_ReusableViews.xcdatamodeld in Sources */,
+				EB9054551D1E7E2E00104654 /* Entity+CoreDataProperties.swift in Sources */,
+				EB9054531D1E7E2E00104654 /* SuperEntity+CoreDataProperties.swift in Sources */,
+				EB9054561D1E7E2E00104654 /* Entity.swift in Sources */,
+				EB9054571D1E7E2E00104654 /* SubEntity+CoreDataProperties.swift in Sources */,
+				EB9054431D1E7C6100104654 /* DryView.swift in Sources */,
+				EB9054541D1E7E2E00104654 /* SuperEntity.swift in Sources */,
 				EB9054211D1E7B9100104654 /* AppDelegate.swift in Sources */,
+				EB9054581D1E7E2E00104654 /* SubEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
