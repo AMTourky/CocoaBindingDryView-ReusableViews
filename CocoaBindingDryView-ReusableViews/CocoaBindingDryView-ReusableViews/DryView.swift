@@ -66,8 +66,6 @@ class DRYView: NSView {
         didSet
         {
             self.inspectedObject = self.inspectedObjectControllerReference?.content as? NSObject
-            self.addObserver(self, forKeyPath: "inspectedObjectControllerReference.selection", options: .New, context: nil)
-            self.addObserver(self, forKeyPath: "inspectedObjectControllerReference.contentObject", options: .New, context: nil)
             self.addObserver(self, forKeyPath: "inspectedObjectControllerReference.content", options: .New, context: nil)
         }
     }
