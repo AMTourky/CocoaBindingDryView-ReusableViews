@@ -78,4 +78,8 @@ class DRYView: NSView {
         }
     }
     
+    deinit
+    {
+        self.removeObserver(self, forKeyPath: "inspectedObjectControllerReference.content")
+    }
 }
