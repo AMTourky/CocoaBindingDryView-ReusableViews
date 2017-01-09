@@ -27,7 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "me.amtourky.CocoaBindingDryView_ReusableViews" in the user's Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.ApplicationSupportDirectory, inDomains: .UserDomainMask)
         let appSupportURL = urls[urls.count - 1]
-        return appSupportURL.URLByAppendingPathComponent("me.amtourky.CocoaBindingDryView_ReusableViews")
+        return appSupportURL.URLByAppendingPathComponent("me.amtourky.CocoaBindingDryView_ReusableViews")!
     }()
 
     lazy var managedObjectModel: NSManagedObjectModel = {
