@@ -10,7 +10,7 @@
 
 import Cocoa
 
-class DRYView: NSView {
+@IBDesignable class DRYView: NSView {
     
     
     @IBInspectable var nibName: String?
@@ -21,7 +21,7 @@ class DRYView: NSView {
             else {return}
             
             var objects: NSArray?
-            NSBundle.mainBundle().loadNibNamed(theNibName, owner: self, topLevelObjects: &objects)
+            self.bundle?.loadNibNamed(theNibName, owner: self, topLevelObjects: &objects)
             if let theObjects = objects
             {
                 for view in theObjects
@@ -37,6 +37,23 @@ class DRYView: NSView {
             }
         }
     }
+    
+    lazy var bundle: NSBundle? =
+    {
+        guard let theNibName = self.nibName
+        else {return nil}
+        
+        var objects: NSArray? = NSArray()
+        var isLoaded = NSBundle.mainBundle().loadNibNamed(theNibName, owner: self, topLevelObjects: &objects)
+        if isLoaded
+        {
+            return NSBundle.mainBundle()
+        }
+        else
+        {
+            return NSBundle(forClass: self.classForCoder)
+        }
+    }()
     
     func selfViewConstraintsToBeFollowedByView(view: NSView)
     {
