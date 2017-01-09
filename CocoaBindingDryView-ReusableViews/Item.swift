@@ -22,12 +22,12 @@ class Item: BaseItem {
         return [20, 40, 60, 80]
     }
     
-    func addSubItem(subItem: SubItem)
+    func addSubItem(_ subItem: SubItem)
     {
         subItem.stringProperty = self.names[self.subItems!.count % 4]
-        subItem.intProperty = NSNumber(integer: self.values[self.subItems!.count % 4])
-        subItem.boolProperty = NSNumber(bool: (self.subItems!.count % 2 == 0))
+        subItem.intProperty = NSNumber(value: self.values[self.subItems!.count % 4] as Int)
+        subItem.boolProperty = NSNumber(value: (self.subItems!.count % 2 == 0) as Bool)
         
-        self.mutableSetValueForKey("subItems").addObject(subItem)
+        self.mutableSetValue(forKey: "subItems").add(subItem)
     }
 }

@@ -20,8 +20,8 @@ import Cocoa
             guard let theNibName = self.nibName
             else {return}
             
-            var objects: NSArray?
-            self.bundle?.loadNibNamed(theNibName, owner: self, topLevelObjects: &objects)
+            var objects: NSArray? = NSArray()
+            self.bundle?.loadNibNamed(theNibName, owner: self, topLevelObjects: &objects!)
             if let theObjects = objects
             {
                 for view in theObjects
@@ -38,31 +38,31 @@ import Cocoa
         }
     }
     
-    lazy var bundle: NSBundle? =
+    lazy var bundle: Bundle? =
     {
         guard let theNibName = self.nibName
         else {return nil}
         
         var objects: NSArray? = NSArray()
-        var isLoaded = NSBundle.mainBundle().loadNibNamed(theNibName, owner: self, topLevelObjects: &objects)
+        var isLoaded = Bundle.main.loadNibNamed(theNibName, owner: self, topLevelObjects: &objects!)
         if isLoaded
         {
-            return NSBundle.mainBundle()
+            return Bundle.main
         }
         else
         {
-            return NSBundle(forClass: self.classForCoder)
+            return Bundle(for: self.classForCoder)
         }
     }()
     
-    func selfViewConstraintsToBeFollowedByView(view: NSView)
+    func selfViewConstraintsToBeFollowedByView(_ view: NSView)
     {
-        let leadingConstraint   = NSLayoutConstraint(item: self, attribute: .Leading    , relatedBy: .Equal, toItem: view, attribute: .Leading  , multiplier: 1, constant: 0)
-        let trailingConstraint  = NSLayoutConstraint(item: self, attribute: .Trailing   , relatedBy: .Equal, toItem: view, attribute: .Trailing , multiplier: 1, constant: 0)
-        let topConstraint       = NSLayoutConstraint(item: self, attribute: .Top        , relatedBy: .Equal, toItem: view, attribute: .Top      , multiplier: 1, constant: 0)
-        let bottomConstraint    = NSLayoutConstraint(item: self, attribute: .Bottom     , relatedBy: .Equal, toItem: view, attribute: .Bottom   , multiplier: 1, constant: 0)
-        let widthConstraint     = NSLayoutConstraint(item: self, attribute: .Width      , relatedBy: .Equal, toItem: view, attribute: .Width    , multiplier: 1, constant: 0)
-        let heightConstraint    = NSLayoutConstraint(item: self, attribute: .Height     , relatedBy: .Equal, toItem: view, attribute: .Height   , multiplier: 1, constant: 0)
+        let leadingConstraint   = NSLayoutConstraint(item: self, attribute: .leading    , relatedBy: .equal, toItem: view, attribute: .leading  , multiplier: 1, constant: 0)
+        let trailingConstraint  = NSLayoutConstraint(item: self, attribute: .trailing   , relatedBy: .equal, toItem: view, attribute: .trailing , multiplier: 1, constant: 0)
+        let topConstraint       = NSLayoutConstraint(item: self, attribute: .top        , relatedBy: .equal, toItem: view, attribute: .top      , multiplier: 1, constant: 0)
+        let bottomConstraint    = NSLayoutConstraint(item: self, attribute: .bottom     , relatedBy: .equal, toItem: view, attribute: .bottom   , multiplier: 1, constant: 0)
+        let widthConstraint     = NSLayoutConstraint(item: self, attribute: .width      , relatedBy: .equal, toItem: view, attribute: .width    , multiplier: 1, constant: 0)
+        let heightConstraint    = NSLayoutConstraint(item: self, attribute: .height     , relatedBy: .equal, toItem: view, attribute: .height   , multiplier: 1, constant: 0)
         self.addConstraints([leadingConstraint, trailingConstraint, topConstraint, bottomConstraint, widthConstraint, heightConstraint])
     }
     
@@ -72,8 +72,8 @@ import Cocoa
     {
         didSet
         {
-            self.willChangeValueForKey("inspectedObject")
-            self.didChangeValueForKey("inspectedObject")
+            self.willChangeValue(forKey: "inspectedObject")
+            self.didChangeValue(forKey: "inspectedObject")
         }
     }
     
@@ -83,11 +83,11 @@ import Cocoa
         didSet
         {
             self.inspectedObject = self.inspectedObjectControllerReference?.content as? NSObject
-            self.addObserver(self, forKeyPath: "inspectedObjectControllerReference.content", options: .New, context: nil)
+            self.addObserver(self, forKeyPath: "inspectedObjectControllerReference.content", options: .new, context: nil)
         }
     }
     
-    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>)
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?)
     {
         if keyPath == "inspectedObjectControllerReference.content"
         {

@@ -14,7 +14,7 @@ import CoreData
 
 extension Item {
 
-    @NSManaged var dateProperty: NSDate?
+    @NSManaged var dateProperty: Date?
     @NSManaged var subItems: NSSet?
 
 }
